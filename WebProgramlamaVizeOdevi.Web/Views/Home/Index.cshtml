@@ -1,0 +1,200 @@
+﻿
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sitesi</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<body>
+  
+
+    <section class="text-center urunler" id="urunler">
+        <div class="containerYeni">
+            <h2 class="mb-2 font-weight-bold">Ürünlerimiz</h2>
+            <hr class="bracketLine" />
+         <br />
+            <div class="row">
+                <div class="card-group">
+                    <div class="card card-urunler">
+                        <img alt="Monster Tulpar Gaming Klavye" class="card-img-top" src="~/lib/img/klavye.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster Tulpar Gaming-X Klavye</h5>
+                            <p class="card-text">
+                                Monster Tulpar Gaming-X Klavye ile hayallerinizi birlikte yazalım! Kırmızı, mavi ve kahverengi switch seçeneklerimizle hoşunuza giden ses ve tokluğa göre seçim yapabilir, kablosuz seçeneğiyle şarj ederek de kullanabilme imkânına sahipsiniz.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="price">$90</h5>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button class="btn btn-primary buttonSepet fa-solid fa-basket-shopping" onclick="addToCart('Monster Tulpar Gaming-X Klavye', 90, '/lib/img/klavye.jpg')"> Sepete Ekle</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-urunler">
+                        <img alt="Rampage Barcase Gaming Mouse" class="card-img-top" src="~/lib/img/fare.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Rampage Barcase Gaming Mouse</h5>
+                            <p class="card-text">
+                                Rampage Barcase Gaming Mouse ile 15,000 dpi'a kadar hassasiyet ile en önemli işlerinizi halledin ve oyunlarınızı doyasıya oynayın!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="price">$55</h5>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button class="btn btn-primary buttonSepet fa-solid fa-basket-shopping" onclick="addToCart('Rampage Barcase Gaming Mouse', 55, '/lib/img/fare.jpg')"> Sepete Ekle</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-urunler">
+                        <img alt="Ryzen 7 7700x" class="card-img-top" src="~/lib/img/islemci.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Ryzen 7 7700x</h5>
+                            <p class="card-text">
+                                İşlemcinin Hası!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="price">$600</h5>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button class="btn btn-primary buttonSepet fa-solid fa-basket-shopping" onclick="addToCart('Ryzen 7 7700x', 600, '/lib/img/islemci.jpg')"> Sepete Ekle</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-group">
+                    <div class="card card-urunler">
+                        <img alt="FireCuda-SSD" class="card-img-top" src="~/lib/img/ssd.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">FireCuda-SSD</h5>
+                            <p class="card-text">
+                                Hız mı? Tabi ki biz!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="price">$170</h5>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button class="btn btn-primary buttonSepet fa-solid fa-basket-shopping" onclick="addToCart('FireCuda-SSD', 170, '/lib/img/ssd.jpg')"> Sepete Ekle</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-urunler">
+                        <img alt="Samsung-SSD" class="card-img-top" src="~/lib/img/sssd.jpg">  @*sssd*@
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung-SSD</h5>
+                            <p class="card-text">
+                                Üstün yazma ve okuma hızlarıyla Samsung'un en yeni model SSD teknolojisini deneyimleyin!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="price">$100</h5>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button class="btn btn-primary buttonSepet fa-solid fa-basket-shopping" onclick="addToCart('Samsung-SSD', 100, '/lib/img/sssd.jpg')"> Sepete Ekle</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-urunler">
+                        <img alt="Amd Ryzen 5 5600X" class="card-img-top" src="~/lib/img/cpus.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Amd Ryzen 5 5600X</h5>
+                            <p class="card-text">
+                                Amd Ryzen 5 5600X güç ve hız birleşti!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h5 class="price">$220</h5>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button class="btn btn-primary buttonSepet fa-solid fa-basket-shopping" onclick="addToCart('Amd Ryzen 5 5600X', 220, '/lib/img/cpus.jpg')"> Sepete Ekle</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hakkimizda" class="container py-5">
+        <h2 class="text-center mb-4">Hakkımızda</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/lib/img/store.png" alt="Company Image" class="img-fluid companyImage" style="height:205px;width:390px">
+            </div>
+            <div class="col-md-6">
+                <p>Alışveriş Sitesi olarak müşterilerimize en iyi hizmeti sunmayı amaçlıyoruz. Geniş ürün yelpazemiz ve uygun fiyatlarımız ile her türlü elektronik ihtiyacınızı karşılıyoruz. Misyonumuz, müşteri memnuniyetini en üst seviyede tutarak kaliteli ürünler sunmaktır. Vizyonumuz, yenilikçi çözümlerimizle sektörde lider konuma gelmektir.</p>
+                <p>Tarihçemiz: 2010 yılında kurulan firmamız, kısa sürede sektördeki yerini sağlamlaştırmış ve sürekli büyüyen bir müşteri kitlesine hitap etmektedir. Ekibimiz, alanında uzman profesyonellerden oluşmaktadır.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="container py-5">
+        <h2 class="text-center mb-4">İletişim</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">İsim</label>
+                        <input type="text" class="form-control" id="name" placeholder="İsminizi giriniz">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi giriniz">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Mesajınızı giriniz"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h5>Adres</h5>
+                <p>No:256 Ankara Caddesi, İstanbul, Türkiye</p>
+                <h5>Telefon</h5>
+                <p>+90 222 88 10</p>
+                <h5>E-posta</h5>
+                <p>techbizde@alisveris.com</p>
+                <h5>Sosyal Medya</h5>
+                <p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Sepetim</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="cartItems">
+                    <!-- Sepetteki ürünler burada görüntülenecek -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Satın Al</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/site.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/363773f36f.js" crossorigin="anonymous"></script>
+</body>
+</html>
